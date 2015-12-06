@@ -1,7 +1,10 @@
+
 input{
-  width:50px;
+  width:70px;
   height:25px;
   font-size: 15px;
+  margin-right:10px;
+  margin-bottom: 20px;
 }
 
 
@@ -9,18 +12,21 @@ input{
 max-width:150px;
 background-color: rgb(238,187,8);
 border:2px solid rgb(191,161,46);
-border-radius: 10px;
-height: 360px;
-margin:25px auto;
+border-radius: 20px;
+height: 400px;
+margin:0 auto;
+
 }
 
 .red-light {
-  margin:15px auto;
+
+  margin:30px auto;
   border-radius: 100%;
   border: 2px solid black;
   width:90px;
   height: 90px;
   background-color:rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
 }
 
 .yellow-light {
@@ -30,6 +36,7 @@ margin:25px auto;
   width:90px;
   height: 90px;
   background-color:rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
 
 }
 
@@ -40,6 +47,7 @@ margin:25px auto;
   width:90px;
   height: 90px;
   background-color: rgb(91,70,2);
+  box-shadow: inset 1px 8px 2px -4px;
 }
 
 .red-light-checked{
@@ -52,4 +60,14 @@ background-color: rgb(254,232,36);
 
 .green-light-checked{
 background-color: green;
+}
+
+.line{
+max-width: 25px;
+margin:0 auto;
+border:2px solid black;
+height: 200px;
+background-color: rgb(91,70,2);
+border-radius: 3px;
+
 }
