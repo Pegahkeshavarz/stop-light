@@ -1,0 +1,55 @@
+input{
+  width:50px;
+  height:25px;
+  font-size: 15px;
+}
+
+
+.container {
+max-width:150px;
+background-color: rgb(238,187,8);
+border:2px solid rgb(191,161,46);
+border-radius: 10px;
+height: 360px;
+margin:25px auto;
+}
+
+.red-light {
+  margin:15px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:90px;
+  height: 90px;
+  background-color:rgb(91,70,2);
+}
+
+.yellow-light {
+  margin:27px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:90px;
+  height: 90px;
+  background-color:rgb(91,70,2);
+
+}
+
+.green-light{
+  margin:15px auto;
+  border-radius: 100%;
+  border: 2px solid black;
+  width:90px;
+  height: 90px;
+  background-color: rgb(91,70,2);
+}
+
+.red-light-checked{
+background-color: red;
+}
+
+.yellow-light-checked{
+background-color: rgb(254,232,36);
+}
+
+.green-light-checked{
+background-color: green;
+}

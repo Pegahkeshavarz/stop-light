@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>stop-light</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" media="screen" >
+
+  </head>
+  <body>
+
+      <div class="button">
+       <input type="button" id="stop" value="stop" style="background-color:red;">
+       <input type="button" id="slow" value="slow" style="background-color:yellow;">
+       <input type="button" id="go" value="go" style="background-color:green;">
+       <input type="button" id="caution" value="caution">
+     </div>
+
+
+     <div class="container">
+       <div class="red-light">
+         <span class=red-light-checked ></span>
+       </div>
+       <div class="yellow-light">
+         <span class=yellow-light-checked ></span>
+       </div>
+       <div class="green-light">
+        <span class='green-light-checked '></span>
+       </div>
+
+     </div>
+
+  <script type="text/javascript">
+
+  var redLight= document.querySelector('.red-light');
+  var yellowLight= document.querySelector('.yellow-light');
+  var greenLight =document.querySelector('.green-light');
+
+  var stopButton = document.querySelector('#stop');
+  var slowButton = document.querySelector('#slow');
+  var goButton = document.querySelector('#go');
+  var cautionButton = document.querySelector('#caution');
+  var myVar;
+
+
+// stop Button
+  function stop(){
+    redLight.classList.toggle('red-light-checked');
+    yellowLight.classList.remove('yellow-light-checked');
+    greenLight.classList.remove('green-light-checked');
+    clearInterval(myVar);
+  }
+
+// slow Button
+  function slow(){
+    yellowLight.classList.toggle('yellow-light-checked');
+    greenLight.classList.remove('green-light-checked');
+    redLight.classList.remove('red-light-checked');
+    clearInterval(myVar);
+  }
+
+//go Button
+  function go(){
+    greenLight.classList.toggle('green-light-checked');
+    redLight.classList.remove('red-light-checked');
+    yellowLight.classList.remove('yellow-light-checked');
+    clearInterval(myVar);
+  }
+
+//caution Button
+  function caution(){
+    redLight.classList.remove('red-light-checked');
+    greenLight.classList.remove('green-light-checked');
+    myVar = setInterval(alertCaution, 1000);
+  }
+
+function alertCaution(){
+  yellowLight.classList.toggle('yellow-light-checked');
+}
+
+
+
+stopButton.addEventListener('click', stop);
+slowButton.addEventListener('click', slow);
+goButton.addEventListener('click', go);
+cautionButton.addEventListener('click', caution);
+
+
+
+
+  </script>
+
+
+
+  </body>
+</html>
