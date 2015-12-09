@@ -27,6 +27,7 @@ margin:0 auto;
   height: 90px;
   background-color:rgb(91,70,2);
   box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
 }
 
 .yellow-light {
@@ -37,6 +38,7 @@ margin:0 auto;
   height: 90px;
   background-color:rgb(91,70,2);
   box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
 
 }
 
@@ -48,10 +50,13 @@ margin:0 auto;
   height: 90px;
   background-color: rgb(91,70,2);
   box-shadow: inset 1px 8px 2px -4px;
+  transition-duration: 500ms;
 }
 
 .red-light-checked{
 background-color: red;
+
+
 }
 
 .yellow-light-checked{
